@@ -3,37 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Budget - Free Finance Management App</title>
+    <title>Personal Budget</title>
     <!-- This is an SEO Change -->
-    <meta name="description" content="Free personal budget app to track expenses, manage finances, and achieve financial goals. Start budgeting today!">
+    <meta name="description" content="A free personal budget app to help you manage your finances and track expenses">
     <!-- This is an SEO Change -->
-    <meta name="keywords" content="personal budget, finance app, free budget tracker, expense management, financial planning">
+    <meta name="keywords" content="personal budget, finance app, expense tracking, free budget tool, money management">
     <!-- This is an SEO Change -->
-    <meta name="author" content="Raghav Patel">
+    <meta name="author" content="Fabio Nolasco">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
-<!-- This is an A11y Change -->
-<a href="#main" class="skip" aria-label="Skip to main content">Skip to content</a>
-
-    <nav aria-label="Main navigation">
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/login.html">Login</a></li>
-            <li><a href="https://google.com">Google</a></li>
-        </ul>
-    </nav>
+<a href="#main" class="skip">Skip to content</a>
 
     <!-- This is a Semantic HTML Change -->
-    <header class="hero">
-        <h1>Personal Budget</h1>
-        <h2>A personal-budget management app</h2>
+    <header role="banner">
+        <nav role="navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/login.html">Login</a></li>
+                <li><a href="https://google.com">Google</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="center" id="main">
+    <div class="hero">
+        <h1>Personal Budget</h1>
+        <h2>A personal-budget management app</h2>
+    </div>
+
+    <main class="center" id="main" role="main">
 
         <div class="page-area">
 
@@ -54,7 +55,9 @@
                         What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                     </p>
                 </article>
-        
+            </section>
+    
+            <section>
                 <article>
                     <h1>Results</h1>
                     <p>
@@ -70,7 +73,9 @@
                         This app is free!!! And you are the only one holding your data!
                     </p>
                 </article>
-        
+            </section>
+    
+            <section>
                 <article>
                     <h1>Stay on track</h1>
                     <p>
@@ -86,7 +91,9 @@
                         What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                     </p>
                 </article>
-        
+            </section>
+    
+            <section>
                 <article>
                     <h1>Results</h1>
                     <p>
@@ -99,7 +106,8 @@
                 <article>
                     <h1>Chart</h1>
                     <p>
-                        <canvas id="myChart" width="400" height="400" aria-label="Budget distribution chart" role="img"></canvas>
+                        <!-- This is an A11y Change -->
+                        <canvas id="myChart" width="400" height="400" aria-label="Budget Allocation Chart" role="img"></canvas>
                     </p>
                 </article>
             </section>
@@ -109,9 +117,10 @@
     </main>
 
     <!-- This is a Semantic HTML Change -->
-    <footer class="bottom">
+    <footer class="bottom" role="contentinfo">
         <div class="center">
-            All rights reserved &copy; Raghav Patel
+            <!-- This is an A11y Change -->
+            <p>All rights reserved &copy; <span aria-label="Fabio Nolasco">Fabio Nolasco</span></p>
         </div>
     </footer>
 
