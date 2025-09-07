@@ -7,6 +7,8 @@
     <title>About Personal Budget - Learn About Our Free Finance App</title>
     <!-- This is an SEO Change -->
     <meta name="description" content="Learn about Personal Budget app features, mission, and how our free tool helps you manage your finances effectively.">
+    <!-- This is an SEO Change -->
+    <meta name="author" content="Raghav Patel">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
 </head>
@@ -15,33 +17,59 @@
 <!-- This is an A11y Change -->
 <a href="#main" class="skip" aria-label="Skip to main content">Skip to content</a>
 
-    <nav aria-label="Main navigation">
+<!-- This is a Semantic HTML Change -->
+<header role="banner">
+    <nav role="navigation" aria-label="Main navigation">
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/login.html">Login</a></li>
+            <li><a href="/pb/public/">Homepage</a></li>
+            <li><a href="/pb/public/about.html">About</a></li>
+            <li><a href="/pb/public/login.html">Login</a></li>
             <li><a href="https://google.com">Google</a></li>
         </ul>
     </nav>
+</header>
 
-    <!-- This is a Semantic HTML Change -->
-    <header class="hero">
-        <h1>About Personal Budget</h1>
-    </header>
+<!-- This is a Semantic HTML Change -->
+<section class="hero">
+    <h1>About Personal Budget</h1>
+    <h2>Learn more about our mission and values</h2>
+</section>
 
-    <main class="center" id="main">
+<main class="center" id="main" role="main">
+    <div class="page-area">
         <!-- This is a Semantic HTML Change -->
-        <article>
-            <h2>Our Mission</h2>
-            <p>We believe everyone should have access to free, easy-to-use financial tools.</p>
-        </article>
-    </main>
+        <section>
+            <article>
+                <h1>Our Mission</h1>
+                <p>We believe everyone should have access to free, easy-to-use financial tools. Our mission is to empower people to take control of their finances through intuitive budgeting software.</p>
+            </article>
+            
+            <article>
+                <h1>Our Story</h1>
+                <p>Founded in 2023, Personal Budget was created to address the need for simple, accessible financial tools that don't require a finance degree to understand.</p>
+            </article>
+        </section>
+        
+        <section>
+            <article>
+                <h1>Privacy Focused</h1>
+                <p>Your data belongs to you. We don't sell your information to third parties, and we use encryption to keep your financial data secure.</p>
+            </article>
+            
+            <article>
+                <h1>Always Free</h1>
+                <p>We believe financial tools should be accessible to everyone, which is why Personal Budget will always remain free to use.</p>
+            </article>
+        </section>
+    </div>
+</main>
 
-    <footer class="bottom">
-        <div class="center">
-            All rights reserved &copy; Raghav Patel
-        </div>
-    </footer>
+<footer class="bottom" role="contentinfo">
+    <div class="center">
+        <!-- This is an A11y Change -->
+        <p>All rights reserved &copy; <span aria-label="Raghav Patel">Raghav Patel</span></p>
+    </div>
+</footer>
 
 </body>
 </html>

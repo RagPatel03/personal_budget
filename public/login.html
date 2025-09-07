@@ -7,6 +7,8 @@
     <title>Login to Personal Budget - Access Your Financial Dashboard</title>
     <!-- This is an SEO Change -->
     <meta name="description" content="Login to your Personal Budget account to access your financial dashboard and budget tracking tools.">
+    <!-- This is an SEO Change -->
+    <meta name="author" content="Raghav Patel">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
 </head>
@@ -15,41 +17,65 @@
 <!-- This is an A11y Change -->
 <a href="#main" class="skip" aria-label="Skip to main content">Skip to content</a>
 
-    <nav aria-label="Main navigation">
+<header role="banner">
+    <nav role="navigation" aria-label="Main navigation">
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/login.html">Login</a></li>
+            <li><a href="/pb/public/">Homepage</a></li>
+            <li><a href="/pb/public/about.html">About</a></li>
+            <li><a href="/pb/public/login.html">Login</a></li>
             <li><a href="https://google.com">Google</a></li>
         </ul>
     </nav>
+</header>
 
-    <!-- This is a Semantic HTML Change -->
-    <header class="hero">
-        <h1>Login</h1>
-    </header>
+<!-- This is a Semantic HTML Change -->
+<section class="hero">
+    <h1>Login to Personal Budget</h1>
+    <h2>Access your financial dashboard</h2>
+</section>
 
-    <main class="center" id="main">
+<main class="center" id="main" role="main">
+    <div class="page-area">
         <!-- This is a Semantic HTML Change -->
-        <form aria-labelledby="login-heading">
-            <h2 id="login-heading">Account Login</h2>
-            <!-- This is an A11y Change -->
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            
-            <!-- This is an A11y Change -->
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            
-            <button type="submit">Login</button>
-        </form>
-    </main>
+        <article>
+            <form aria-labelledby="login-heading">
+                <h1 id="login-heading">Account Login</h1>
+                <div class="form-group">
+                    <!-- This is an A11y Change -->
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required aria-required="true">
+                </div>
+                
+                <div class="form-group">
+                    <!-- This is an A11y Change -->
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required aria-required="true">
+                </div>
+                
+                <button type="submit">Login</button>
+                
+                <p class="signup-link">Don't have an account? <a href="#">Sign up here</a></p>
+            </form>
+        </article>
+        
+        <article>
+            <h2>Why Create an Account?</h2>
+            <ul>
+                <li>Sync your budget across multiple devices</li>
+                <li>Access advanced budgeting features</li>
+                <li>Export your financial data</li>
+                <li>Set custom budget categories</li>
+            </ul>
+        </article>
+    </div>
+</main>
 
-    <footer class="bottom">
-        <div class="center">
-            All rights reserved &copy; Raghav Patel
-        </div>
-    </footer>
+<footer class="bottom" role="contentinfo">
+    <div class="center">
+        <!-- This is an A11y Change -->
+        <p>All rights reserved &copy; <span aria-label="Raghav Patel">Raghav Patel</span></p>
+    </div>
+</footer>
 
 </body>
 </html>

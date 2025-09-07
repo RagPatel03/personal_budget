@@ -3,8 +3,10 @@
 }
 
 body {
-    font-size: 10px;
-    font-family: Tahoma, Arial;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
 nav {
@@ -26,10 +28,12 @@ nav ul li a {
     display: block;
     padding: 0 20px;
     line-height: 44px;
-    font-size: 1.4em;
+    font-size: 1.1em;
+    font-weight: 500;
     text-decoration: none;
     color: #fff;
     margin: 0;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover  {
@@ -45,22 +49,31 @@ div.hero {
     background-repeat: no-repeat;
     background-position: center bottom;
     padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 div.hero h1,
 div.hero h2 {
     text-align: center;
     margin: 0;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 div.hero h1 {
     color: #fff;
-    font-size: 4.2em;
-    margin-bottom: 20px;
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
 }
 
 div.hero h2 {
     color: #4d5791;
+    font-size: 1.8em;
+    font-weight: 400;
 }
 
 main {
@@ -69,7 +82,7 @@ main {
 }
 
 .page-area {
-    max-width: 768px;
+    max-width: 1200px;
     display: inline-block;
 }
 
@@ -77,6 +90,15 @@ footer {
     height: 50px;
     background-color: #b4c6f0;
     padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+    color: #4d5791;
 }
 
 .skip {
@@ -84,6 +106,7 @@ footer {
     line-height: 44px;
     padding: 0 20px;
     margin-top: -44px;
+    font-weight: 600;
 }
 
 .skip:focus {
@@ -100,10 +123,47 @@ main article {
     max-width: 340px;
     text-align: justify;
     margin: 20px;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+main article:hover {
+    transform: translateY(-5px);
+}
+
+main article h1 {
+    font-size: 1.5em;
+    color: #4d5791;
+    margin-top: 0;
+    border-bottom: 2px solid #b4c6f0;
+    padding-bottom: 10px;
+}
+
+section {
+    margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
     main article {
-        margin: 10px;
+        margin: 15px;
+    }
+    
+    .page-area {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .page-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    main article {
+        max-width: 100%;
     }
 }
